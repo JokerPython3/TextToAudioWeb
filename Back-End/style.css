@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, #000000, #0f0f0f, #1a1a1a, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+form {
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+select {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  background-color: #222;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+select:hover {
+  background-color: #333;
+}
+
+
+.text {
+  width: 100%;
+  height: 180px;
+  padding: 15px;
+  font-size: 14px;
+  font-family: monospace;
+  border: 2px solid #555;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+  outline: none;
+  background-color: #111;
+  color: #ddd;
+  transition: border-color 0.3s;
+}
+
+.text:focus {
+  border-color: #0099ff;
+  background-color: #222;
+}
+
+
+.get {
+  margin-top: 20px;
+  padding: 12px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0099ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get:hover {
+  background-color: #007acc;
+}
+
+
+.error-message {
+  color: #f44;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+audio {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+
+
+a.get {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #00bb00;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+a.get:hover {
+  background-color: #008800;
+}
+
+
+footer.copyright {
+  margin-top: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}

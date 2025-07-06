@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TextToAudio</title>
+</head>
+<body>
+  <form action="../Back-End/index.php" method="POST">
+    <select name="language">
+      <option value="en" selected>English</option>
+      <option value="ar">Arabic</option>
+    </select>
+
+    <textarea
+      class="text"
+      placeholder="Enter any text to get audio"
+      name="texts"
+      required
+    ></textarea>
+
+    <button class="get" type="submit">Get</button>
+  </form>
+
+  <footer class="copyright">
+    &copy; 2025 Ammar Nitro. All rights reserved.
+  </footer>
+</body>
+</html>
